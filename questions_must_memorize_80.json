@@ -10,9 +10,9 @@
     "isMustMemorize": true,
     "question": "現今主流大型語言模型（如 GPT-4、Claude、Gemini）底層最核心的深度學習架構為何？",
     "options": [
-      "RNN（遞歸神經網絡）",
-      "CNN（卷積神經網絡）",
-      "SVM（支援向量機）",
+      "RNN",
+      "CNN",
+      "SVM",
       "Transformer"
     ],
     "answer": 3,
@@ -31,10 +31,10 @@
     "isMustMemorize": true,
     "question": "Transformer 架構中，用來計算輸入文本中每個詞與所有其他詞之間關聯權重的核心機制稱為？",
     "options": [
-      "反向傳播（Backpropagation）",
-      "自注意力機制（Self-Attention）",
-      "最大池化（Max Pooling）",
-      "隨機梯度下降（SGD）"
+      "反向傳播",
+      "自注意力機制",
+      "最大池化",
+      "隨機梯度下降"
     ],
     "answer": 1,
     "explanation": "Self-Attention（自注意力機制）透過 Query、Key、Value 三組向量矩陣運算，動態衡量句子內部各 Token 間的關聯強度，精確捕捉跨長句的語法與語義連結。",
@@ -52,10 +52,10 @@
     "isMustMemorize": true,
     "question": "在大型語言模型（LLM）的文字處理流程中，模型進行計算與計費的最小基本語意單位為何？",
     "options": [
-      "Word（單詞）",
-      "Pixel（像素）",
-      "Byte（位元組）",
-      "Token（標記/詞元）"
+      "Word",
+      "Pixel",
+      "Byte",
+      "Token"
     ],
     "answer": 3,
     "explanation": "Token 是大語言模型分詞（Tokenization）後的最小處理單位。一般 100 個英文單字約等於 130 個 Tokens，而一個繁體中文字通常佔用 1 至 3 個 Tokens。",
@@ -76,7 +76,7 @@
       "K-Means 分群",
       "Dijkstra 最短路徑",
       "A* 尋路演算法",
-      "BPE（Byte-Pair Encoding，位元組對編碼）"
+      "BPE"
     ],
     "answer": 3,
     "explanation": "BPE 是一種統計式子詞分詞法，從單字符出發反覆合併最高頻的連續字符對，能以固定大小的詞表有效解決未登錄詞（OOV）問題。",
@@ -96,7 +96,7 @@
     "options": [
       "Real-time Learning from Human Feedback",
       "Random Linear Hyperparameter Fitting",
-      "Reinforcement Learning from Human Feedback（基於人類回饋的強化學習）",
+      "Reinforcement Learning from Human Feedback",
       "Recurrent Logic with Heuristic Functions"
     ],
     "answer": 2,
@@ -115,10 +115,10 @@
     "isMustMemorize": true,
     "question": "近年興起、不需額外訓練獎勵模型即可直接透過偏好數據對 LLM 進行優化對齊的輕量技術為何？",
     "options": [
-      "DPO（Direct Preference Optimization，直接偏好優化）",
-      "GAN（生成對抗網絡）",
-      "PCA（主成分分析）",
-      "CNN（卷積神經網絡）"
+      "DPO",
+      "GAN",
+      "PCA",
+      "CNN"
     ],
     "answer": 0,
     "explanation": "DPO 透過數學推導證明可在不顯式訓練獎勵模型和無需強化學習採樣的情況下，直接利用交叉熵損失對偏好數據微調，大幅提升訓練穩定度並節省顯存。",
@@ -136,7 +136,7 @@
     "isMustMemorize": true,
     "question": "在與 LLM 互動或調用 API 時，調節模型輸出「隨機性與創造力」的參數通常為何者？",
     "options": [
-      "Temperature（溫度參數）",
+      "Temperature",
       "Max Tokens",
       "Dropout Rate",
       "Batch Size"
@@ -158,9 +158,9 @@
     "question": "LLM 採樣解碼機制中，動態截取「累積機率加總達到門檻值 p」的候選詞集合再進行抽樣的技術稱為？",
     "options": [
       "Top-k 採樣",
-      "Beam Search（束搜尋）",
-      "Top-p 採樣（核採樣，Nucleus Sampling）",
-      "Greedy Search（貪婪搜尋）"
+      "Beam Search",
+      "Top-p 採樣",
+      "Greedy Search"
     ],
     "answer": 2,
     "explanation": "Top-p 採樣依機率由高到低累加候選詞直到累積機率達到 p（如 0.9），僅在該集合內重新正規化後採樣，能依上下文動態過濾長尾離譜詞。",
@@ -178,10 +178,10 @@
     "isMustMemorize": true,
     "question": "大型語言模型以流暢自信的語氣產出完全虛構、捏造或與客觀事實不符的內容，這種現象稱為？",
     "options": [
-      "欠擬合（Underfitting）",
-      "過擬合（Overfitting）",
-      "概念漂移（Concept Drift）",
-      "幻覺（Hallucination）"
+      "欠擬合",
+      "過擬合",
+      "概念漂移",
+      "幻覺"
     ],
     "answer": 3,
     "explanation": "幻覺源自 LLM 本質是「接續下一個可能 Token」的統計機率模型，缺乏對物理與客觀世界的絕對真值感知，當遇知識盲區便會依機率拼湊虛假事實。",
@@ -200,9 +200,9 @@
     "question": "大型語言模型在單次互動對話中，所能同時容納與考慮的「輸入指示詞加輸出內容」總 Token 上限稱為？",
     "options": [
       "Memory Bandwidth",
-      "Context Window（上下文視窗/長度）",
+      "Context Window",
       "Latency",
-      "Hidden State（隱藏狀態）"
+      "Hidden State"
     ],
     "answer": 1,
     "explanation": "Context Window 代表模型單次推論能處理的總 Token 上限。超出該視窗的早期歷史會被截斷或遺忘。現今模型視窗已擴展至 128K 甚至 2M Tokens。",
@@ -220,9 +220,9 @@
     "isMustMemorize": true,
     "question": "將文字、圖像等非結構化資料映射轉換為高維空間中的連續數值向量，以便衡量其語意相似度的技術稱為？",
     "options": [
-      "反編譯（Decompilation）",
-      "雜湊化（Hashing）",
-      "詞嵌入（Embedding）",
+      "反編譯",
+      "雜湊化",
+      "詞嵌入",
       "無失真壓縮"
     ],
     "answer": 2,
@@ -241,10 +241,10 @@
     "isMustMemorize": true,
     "question": "專門用於儲存高維度嵌入向量，並支援「近似最近鄰（ANN）」高效率相似度搜尋的系統稱為？",
     "options": [
-      "關聯式資料庫（RDBMS）",
-      "向量資料庫（Vector Database）",
-      "鍵值資料庫（Key-Value DB）",
-      "文件資料庫（Document DB）"
+      "關聯式資料庫",
+      "向量資料庫",
+      "鍵值資料庫",
+      "文件資料庫"
     ],
     "answer": 1,
     "explanation": "向量資料庫（如 Pinecone、Milvus、Chroma、Qdrant）針對高維向量設計索引（如 HNSW），能在毫秒內於海量資料中檢索出與查詢向量最相似的文件段落。",
@@ -262,8 +262,8 @@
     "isMustMemorize": true,
     "question": "當深度學習模型規模跨過某一臨界門檻時，突然展現出小模型所未具備的多步推理與解題能力，此特徵稱為？",
     "options": [
-      "維度災難（Curse of Dimensionality）",
-      "湧現能力（Emergent Abilities）",
+      "維度災難",
+      "湧現能力",
       "梯度爆炸",
       "算力衰退"
     ],
@@ -283,7 +283,7 @@
     "isMustMemorize": true,
     "question": "現代主流圖像生成 AI（如 Midjourney、Stable Diffusion）所採用的核心生成數學架構為何？",
     "options": [
-      "擴散模型（Diffusion Models）",
+      "擴散模型",
       "樸素貝氏",
       "決策樹",
       "線性迴歸"
@@ -307,7 +307,7 @@
       "單模態 AI",
       "邊緣 AI",
       "分散式 AI",
-      "多模態 AI（Multimodal AI）"
+      "多模態 AI"
     ],
     "answer": 3,
     "explanation": "Multimodal（多模態）系統打破傳統純文字框架，具備跨媒體信號統合感知與跨模態推演（如給予電路圖照片診斷故障問題）的能力。",
@@ -326,7 +326,7 @@
     "question": "在對大模型進行微調時，凍結預訓練權重並透過低秩矩陣分解大幅減少可訓練參數量的高效率微調技術稱為？",
     "options": [
       "全量參數微調",
-      "LoRA（Low-Rank Adaptation，低秩適應）",
+      "LoRA",
       "資料擴增",
       "網格搜尋"
     ],
@@ -348,7 +348,7 @@
     "options": [
       "模型蒸餾",
       "特徵工程",
-      "模型量化（Model Quantization）",
+      "模型量化",
       "正則化"
     ],
     "answer": 2,
@@ -368,9 +368,9 @@
     "question": "將 LLM 的回答與客觀真實世界資料來源、可查證的事實資料庫或上下文緊密連結，以抑制幻覺發生的機制稱為？",
     "options": [
       "Overfitting",
-      "Grounding（基礎錨定/實境對齊）",
+      "Grounding",
       "Tokenization",
-      "Pruning（剪枝）"
+      "Pruning"
     ],
     "answer": 1,
     "explanation": "Grounding（錨定）讓模型的語言生成根植於外部可驗證的權威知識來源，確保生成的每一句話皆有真實數據作為支撐。",
@@ -409,7 +409,7 @@
     "isMustMemorize": true,
     "question": "在與大模型互動時，完全不提供任何示範樣本（Examples），直接要求模型理解任務並產生回答的推論模式稱為？",
     "options": [
-      "Zero-shot Learning（零樣本學習）",
+      "Zero-shot Learning",
       "Few-shot Learning",
       "One-shot Learning",
       "Unsupervised Pre-training"
@@ -431,7 +431,7 @@
     "question": "不提供任何示範樣本，僅依賴提示詞直接說明任務目標要求模型解答的推論模式稱為？",
     "options": [
       "CoT",
-      "Zero-Shot Prompting（零樣本提示）",
+      "Zero-Shot Prompting",
       "Few-Shot Prompting",
       "Fine-Tuning"
     ],
@@ -452,7 +452,7 @@
     "question": "在提示詞中提供 1 至數個「輸入-輸出」標準示範樣本，引導模型理解期望格式與風格的技巧稱為？",
     "options": [
       "零樣本提示",
-      "Few-Shot Prompting（少樣本提示）",
+      "Few-Shot Prompting",
       "全量訓練",
       "模型微調"
     ],
@@ -472,7 +472,7 @@
     "isMustMemorize": true,
     "question": "誘導模型「一步一步思考（Let's think step by step）」以列出推理中間步驟，顯著提升邏輯與數學解題精度的技術稱為？",
     "options": [
-      "思維鏈（Chain-of-Thought, CoT）",
+      "思維鏈",
       "自洽性採樣",
       "思維樹",
       "角色扮演"
@@ -494,7 +494,7 @@
     "question": "在較高溫度下生成多條獨立的思維鏈（CoT），最後透過多數決投票（Majority Voting）選出最穩健答案的技術稱為？",
     "options": [
       "角色賦予",
-      "自我一致性（Self-Consistency）",
+      "自我一致性",
       "思維樹",
       "貪婪搜尋"
     ],
@@ -515,9 +515,9 @@
     "question": "將問題拆解為思維節點，利用搜尋演算法（如 BFS/DFS）探索不同可能分支，具備評估與「回溯（Backtracking）」能力的架構為？",
     "options": [
       "RAG",
-      "思維鏈（CoT）",
+      "思維鏈",
       "ReAct",
-      "思維樹（Tree of Thoughts, ToT）"
+      "思維樹"
     ],
     "answer": 3,
     "explanation": "ToT（思維樹）超越線性思考鏈，能在樹狀結構中動態評估候選步驟的優劣，在遇到死胡同時回溯並嘗試其他決策路徑。",
@@ -535,7 +535,7 @@
     "isMustMemorize": true,
     "question": "結合「推理（Thought）」與「行動（Action）」，交替執行內部思考與外部工具呼叫以完成複雜任務的代理人架構稱為？",
     "options": [
-      "ReAct（Reasoning + Acting）",
+      "ReAct",
       "純問答機器人",
       "神經網路剪枝",
       "靜態搜尋引擎"
@@ -558,7 +558,7 @@
     "options": [
       "負向提示",
       "系統提示",
-      "定向刺激提示（Directional Stimulus Prompting）",
+      "定向刺激提示",
       "越獄提示"
     ],
     "answer": 2,
@@ -579,7 +579,7 @@
     "options": [
       "Few-shot Prompt",
       "Assistant Prompt",
-      "System Prompt（系統提示詞）",
+      "System Prompt",
       "User Prompt"
     ],
     "answer": 2,
@@ -600,7 +600,7 @@
     "options": [
       "正向提示詞",
       "溫度參數",
-      "負向提示詞（Negative Prompt）",
+      "負向提示詞",
       "終止標記"
     ],
     "answer": 2,
@@ -619,7 +619,7 @@
     "isMustMemorize": true,
     "question": "攻擊者刻意在輸入文字或受檢索的外部網頁中夾帶惡意指令，試圖推翻原本系統提示規範並劫持模型行為的手法稱為？",
     "options": [
-      "提示詞注入攻擊（Prompt Injection）",
+      "提示詞注入攻擊",
       "緩衝區溢位",
       "SQL 注入",
       "資料投毒"
@@ -640,7 +640,7 @@
     "isMustMemorize": true,
     "question": "利用對抗性語意偽裝、假設性小說情境或多層編碼，企圖繞過模型內建的安全道德對齊審查防線的攻擊手段稱為？",
     "options": [
-      "越獄攻擊（Jailbreaking）",
+      "越獄攻擊",
       "暴力破解",
       "中間人攻擊",
       "分散式阻斷服務"
@@ -663,7 +663,7 @@
     "options": [
       "Top-p",
       "Temperature",
-      "Presence Penalty（存在懲罰）",
+      "Presence Penalty",
       "Frequency Penalty"
     ],
     "answer": 2,
@@ -682,7 +682,7 @@
     "isMustMemorize": true,
     "question": "懲罰力度與某個單詞在文本中「已出現的累積次數」成正比，出現次數越多懲罰越重，用以強力防止連環複誦跳針的參數為？",
     "options": [
-      "Frequency Penalty（頻率懲罰）",
+      "Frequency Penalty",
       "Stop Sequence",
       "Presence Penalty",
       "Top-k"
@@ -706,7 +706,7 @@
       "Context Window",
       "Prompt Drift",
       "Max Tokens",
-      "Stop Sequence（終止序列/結束標記）"
+      "Stop Sequence"
     ],
     "answer": 3,
     "explanation": "Stop Sequence 在少樣本多輪對話模擬中極為關鍵，能防止模型自行替使用者偽造下一輪發言。",
@@ -724,7 +724,7 @@
     "isMustMemorize": true,
     "question": "透過語法約束（Grammar/Schema Constraint），強制保證模型輸出的內容 100% 符合特定 JSON 格式以利程式解析的機制稱為？",
     "options": [
-      "結構化輸出（Structured Output / JSON Mode）",
+      "結構化輸出",
       "自由文字生成",
       "超參數調優",
       "標籤分類"
@@ -748,7 +748,7 @@
       "梯度下降",
       "全量微調",
       "知識蒸餾",
-      "語境學習（In-Context Learning, ICL）"
+      "語境學習"
     ],
     "answer": 3,
     "explanation": "In-Context Learning 是 LLM 在預訓練階段自然具備的能力，模型透過自注意力權重在動態上下文中理解並仿照任務模式。",
@@ -766,7 +766,7 @@
     "isMustMemorize": true,
     "question": "由於底層模型 API 版本升級、更新或微調版本迭代，導致原本運作良好的提示詞表現失常或不再遵守格式的現象稱為？",
     "options": [
-      "提示詞漂移（Prompt Drift）",
+      "提示詞漂移",
       "協變量偏移",
       "概念漂移",
       "資料漂移"
@@ -788,7 +788,7 @@
     "question": "在提示工程中，使用三引號（\"\"\"）、XML 標籤（如 <context></context>）將指令與參考材料清晰區隔的分隔標記統稱為？",
     "options": [
       "系統呼叫",
-      "分隔符號（Delimiters）",
+      "分隔符號",
       "轉義字符",
       "超鏈接"
     ],
@@ -808,7 +808,7 @@
     "isMustMemorize": true,
     "question": "在 Prompt 中明確限定輸出長度、格式、風格或條列項目數量（如「嚴格以繁體中文、限 200 字以內產出 3 點結論」）的規則稱為？",
     "options": [
-      "輸出約束（Output Constraint）",
+      "輸出約束",
       "角色賦予",
       "溫度調節",
       "隨機採樣"
@@ -829,7 +829,7 @@
     "isMustMemorize": true,
     "question": "引導模型採納特定專業視角、專業術語庫與態度風格（如「你是一位有 20 年經驗的資深智慧財產權專利律師」）的技巧稱為？",
     "options": [
-      "角色設定提示（Role-Based Prompting）",
+      "角色設定提示",
       "隨機提示",
       "終止提示",
       "負向提示"
@@ -851,7 +851,7 @@
     "question": "在模型回答前先從外部知識庫檢索相關文件段落注入上下文，解決時效性與幻覺問題的技術稱為？",
     "options": [
       "知識蒸餾",
-      "RAG（檢索增強生成，Retrieval-Augmented Generation）",
+      "RAG",
       "全參數微調",
       "模型剪枝"
     ],
@@ -873,8 +873,8 @@
     "options": [
       "圖形資料庫",
       "鍵值資料庫",
-      "向量資料庫（Vector Database）",
-      "關聯式資料庫（RDBMS）"
+      "向量資料庫",
+      "關聯式資料庫"
     ],
     "answer": 2,
     "explanation": "向量資料庫（如 Pinecone、Milvus、Chroma、Qdrant）透過 HNSW 等空間索引演算法，在高維特徵空間中快速查找語義最近鄰。",
@@ -894,7 +894,7 @@
     "options": [
       "K-Means",
       "梯度下降",
-      "稀疏檢索（Sparse Retrieval / 如 BM25）",
+      "稀疏檢索",
       "卷積神經網絡"
     ],
     "answer": 2,
@@ -914,7 +914,7 @@
     "question": "同時運行 Dense 語意檢索與 Sparse 關鍵字檢索，並透過倒數排名融合（RRF）加權計算最終排名的架構稱為？",
     "options": [
       "純向量搜尋",
-      "混合檢索（Hybrid Search）",
+      "混合檢索",
       "線性搜尋",
       "二分搜尋"
     ],
@@ -934,7 +934,7 @@
     "isMustMemorize": true,
     "question": "對初篩檢索出來的前數十個候選文檔塊，利用交叉編碼器（Cross-Encoder）逐一精算其與問題的深層關聯並重新排名的模組為？",
     "options": [
-      "重排序模型（Reranker / Cross-Encoder）",
+      "重排序模型",
       "Tokenizer",
       "VAE 自編碼器",
       "分塊器"
@@ -979,7 +979,7 @@
       "硬編碼規則庫",
       "純問答機器人",
       "靜態搜尋引擎",
-      "AI Agent（智慧代理人）"
+      "AI Agent"
     ],
     "answer": 3,
     "explanation": "AI Agent 不僅僅是生成文字，更能自主拆解複雜任務、調用外部 API、觀察執行結果並自我修正直到達成目標。",
@@ -999,7 +999,7 @@
     "options": [
       "模型微調",
       "文本向量化",
-      "函數呼叫（Function Calling / Tool Use）",
+      "函數呼叫",
       "模型剪枝"
     ],
     "answer": 2,
@@ -1021,7 +1021,7 @@
       "ODBC",
       "FTP",
       "HTTP/1.1",
-      "MCP（Model Context Protocol，模型上下文協議）"
+      "MCP"
     ],
     "answer": 3,
     "explanation": "MCP 建立了類似 USB 的標準化通用介面，消除每個專案各自定義工具呼叫格式的碎片化痛點。",
@@ -1040,7 +1040,7 @@
     "question": "在特定領域數據集上，更新整個神經網路所有的底層權重矩陣，耗費極大顯存但能深度同化領域風格的訓練方式為？",
     "options": [
       "提示工程",
-      "全參數微調（Full Parameter Fine-Tuning）",
+      "全參數微調",
       "RAG",
       "LoRA"
     ],
@@ -1060,7 +1060,7 @@
     "isMustMemorize": true,
     "question": "凍結預訓練模型絕大部分原始權重，僅訓練極少數新增或外掛之適配參數（通常佔總參數 < 1%）的技術統稱為？",
     "options": [
-      "PEFT（Parameter-Efficient Fine-Tuning，參數高效率微調）",
+      "PEFT",
       "線性回歸",
       "全量預訓練",
       "無監督分群"
@@ -1082,7 +1082,7 @@
     "question": "透過將權重矩陣更新量分解為兩個低維低秩矩陣（A 與 B）的相乘，大幅降低可訓練參數量與顯存消耗的微調技術為？",
     "options": [
       "全量訓練",
-      "LoRA（Low-Rank Adaptation，低秩適應）",
+      "LoRA",
       "剪枝量化",
       "網格搜索"
     ],
@@ -1104,7 +1104,7 @@
     "options": [
       "知識蒸餾",
       "模型剪枝",
-      "QLoRA（Quantized Low-Rank Adaptation）",
+      "QLoRA",
       "全量微調"
     ],
     "answer": 2,
@@ -1124,7 +1124,7 @@
     "question": "以參數量龐大複雜的教師模型輸出的機率分佈為指引，訓練輕量化學生模型以遷移高級推理能力的技術為？",
     "options": [
       "模型量化",
-      "知識蒸餾（Knowledge Distillation）",
+      "知識蒸餾",
       "參數剪枝",
       "特徵提取"
     ],
@@ -1144,7 +1144,7 @@
     "isMustMemorize": true,
     "question": "非字面完全匹配，而是透過計算用戶提問的向量餘弦相似度，高於門檻即直接回傳歷史解答以節省 API 費用與延遲的架構為？",
     "options": [
-      "語意快取（Semantic Cache / 如 GPTCache）",
+      "語意快取",
       "DNS 緩存",
       "硬碟快取",
       "傳統 Redis Key 匹配"
@@ -1167,7 +1167,7 @@
     "options": [
       "代碼老化",
       "提示詞漂移",
-      "向量漂移（Embedding / Vector Drift）",
+      "向量漂移",
       "概念漂移"
     ],
     "answer": 2,
@@ -1186,7 +1186,7 @@
     "isMustMemorize": true,
     "question": "在極長篇無關背景文本（草堆）中隨機隱藏一條微小但關鍵的事實（針），測試超長上下文模型能否精確找回的評估測試為？",
     "options": [
-      "大海撈針測試（Needle In A Haystack, NIAH）",
+      "大海撈針測試",
       "BLEU 評測",
       "Pass@1",
       "圖靈測試"
@@ -1208,7 +1208,7 @@
     "question": "介於前端應用與底層多個 LLM 服務商之間，負責流量路由、負載均衡、Token 配額監控與故障自動切換（Fallback）的架構層為？",
     "options": [
       "硬碟陣列",
-      "AI 網關（AI Gateway / 如 LiteLLM、Portkey）",
+      "AI 網關",
       "靜態伺服器",
       "前端路由器"
     ],
@@ -1270,10 +1270,10 @@
     "isMustMemorize": true,
     "question": "全球首部具備法律約束力之全面性 AI 監管法規，採取「基於風險（Risk-based）」進行四級分級監管的法案為？",
     "options": [
-      "數位千禧年著作權法（DMCA）",
+      "數位千禧年著作權法",
       "巴塞爾協議",
-      "沙賓法案（SOX）",
-      "歐盟人工智慧法案（EU AI Act）"
+      "沙賓法案",
+      "歐盟人工智慧法案"
     ],
     "answer": 3,
     "explanation": "EU AI Act 將 AI 系統劃分為不可接受風險、高風險、特定透明度風險及最小風險，奠定了全球 AI 治理與合規標竿。",
@@ -1291,7 +1291,7 @@
     "isMustMemorize": true,
     "question": "在歐盟《人工智慧法案》（EU AI Act）中，下列哪一項應用被明確列入「不可接受之風險」而遭到全面禁止？",
     "options": [
-      "政府實施之社會信用評分（Social Scoring）或針對弱勢群體之認知行為操控",
+      "政府實施之社會信用評分或針對弱勢群體之認知行為操控",
       "電玩遊戲中的 NPC 角色對話",
       "倉儲搬運機器人",
       "垃圾郵件過濾器"
@@ -1313,7 +1313,7 @@
     "question": "依照台灣現行著作權法規與司法判例，純粹由人工智慧依據簡短提示詞自主生成之內容，其著作權歸屬為何？",
     "options": [
       "自動歸模型開發廠商所有",
-      "不受著作權法保護（因欠缺自然人之原創性精神創作投入）",
+      "不受著作權法保護",
       "自動歸顯示卡硬體製造商所有",
       "歸當地電力公司所有"
     ],
@@ -1334,7 +1334,7 @@
     "question": "在 AI 訓練階段未經版權人個別授權抓取海量網路公開資料，是否合法的核心抗辯法理原則通常為何？",
     "options": [
       "商標默示許可",
-      "合理使用原則（Fair Use）與文字與數據探勘（TDM）例外條款",
+      "合理使用原則與文字與數據探勘例外條款",
       "國家緊急徵用權",
       "專利強制授權"
     ],
@@ -1376,7 +1376,7 @@
     "question": "惡意攻擊者在模型訓練或微調數據集中偷偷混入精心篡改的被污染樣本，使模型學會特定後門觸發詞的攻擊稱為？",
     "options": [
       "分散式阻斷服務",
-      "資料投毒攻擊（Data Poisoning）",
+      "資料投毒攻擊",
       "ARP 欺騙",
       "中間人監聽"
     ],
@@ -1399,7 +1399,7 @@
       "提示詞注入",
       "SQL 注入",
       "緩衝區溢位",
-      "模型反推/反演攻擊（Model Inversion Attack）"
+      "模型反推/反演攻擊"
     ],
     "answer": 3,
     "explanation": "Model Inversion 利用模型輸出對特定特徵的置信度反向求解輸入，證明了神經網路權重可能無意中「死記硬背」了機密個資。",
@@ -1417,7 +1417,7 @@
     "isMustMemorize": true,
     "question": "攻擊者藉由分析模型在特定數據輸入時的置信度極高表現，精確推斷某個人的個人資料「是否曾包含在模型訓練集中」的攻擊為？",
     "options": [
-      "成員推斷攻擊（Membership Inference Attack, MIA）",
+      "成員推斷攻擊",
       "阻斷服務",
       "模型竊取",
       "越獄攻擊"
@@ -1441,7 +1441,7 @@
       "高斯加噪",
       "鏡頭光學模糊",
       "色差失真",
-      "對抗樣本擾動（Adversarial Perturbation）"
+      "對抗樣本擾動"
     ],
     "answer": 3,
     "explanation": "對抗樣本暴露了神經網路在幾何決策邊界上的脆弱性，微小的高維梯度向量偏移即可誘騙模型產生災難性誤判。",
@@ -1461,7 +1461,7 @@
     "options": [
       "自注意力層",
       "分詞器",
-      "安全護欄（Guardrails / 如 NeMo Guardrails、Llama Guard）",
+      "安全護欄",
       "位置編碼器"
     ],
     "answer": 2,
@@ -1483,7 +1483,7 @@
       "特徵提取",
       "模型剪枝",
       "資料清洗",
-      "差分隱私（Differential Privacy, DP / 如 DP-SGD）"
+      "差分隱私"
     ],
     "answer": 3,
     "explanation": "差分隱私（epsilon-DP）提供了隱私保護的嚴謹數學證明，確保攻擊者即使擁有無限算力也無法確定特定樣本是否存在於訓練集中。",
@@ -1502,7 +1502,7 @@
     "question": "由於歷史訓練文本中充斥著社會刻板印象或結構性不平等，導致生成式 AI 在招募或授信評分時對特定性別、種族產生歧視的現象稱為？",
     "options": [
       "分詞錯誤",
-      "演算法偏見（Algorithmic Bias）",
+      "演算法偏見",
       "硬體雜訊",
       "過擬合"
     ],
@@ -1523,7 +1523,7 @@
     "question": "在高風險決策（如司法判刑、醫療診斷、重大人事升遷）中，要求系統不能僅是黑盒子，必須能提供推理依據的技術領域為？",
     "options": [
       "深度強化學習",
-      "可解釋性人工智慧（Explainable AI, XAI）",
+      "可解釋性人工智慧",
       "非監督學習",
       "通用人工智慧"
     ],
@@ -1546,7 +1546,7 @@
       "藍隊防禦",
       "灰盒測試",
       "使用者滿意度調查",
-      "AI 紅隊演練（AI Red Teaming）"
+      "AI 紅隊演練"
     ],
     "answer": 3,
     "explanation": "紅隊演練是前沿模型發布前必經的殘酷壓力測試，透過主動攻擊揭露常規評測指標無法覆蓋的安全死角。",
@@ -1567,7 +1567,7 @@
       "TCP/IP 協議",
       "JPEG 壓縮標準",
       "MP3 格式標準",
-      "C2PA 內容憑證（Content Credentials）與 Google SynthID"
+      "C2PA 內容憑證與 Google SynthID"
     ],
     "answer": 3,
     "explanation": "C2PA 與隱形浮水印技術為數位內容打上不可竄改的血統證明（Provenance），是全球對抗 Deepfake 假訊息擴散的核心技術基石。",
@@ -1588,7 +1588,7 @@
       "綠色 AI",
       "邊緣 AI",
       "白名單 AI",
-      "影子 AI（Shadow AI）"
+      "影子 AI"
     ],
     "answer": 3,
     "explanation": "Shadow AI 是現代企業內部資料外洩的最隱蔽破口，員工無意間將未公開商業計畫或客戶個資貼入對話框，極易引發災難性合規事故。",
@@ -1608,7 +1608,7 @@
     "options": [
       "開源共享原則",
       "網路中立性",
-      "資料主權與資料在地化駐留（Data Sovereignty / Data Residency）",
+      "資料主權與資料在地化駐留",
       "合理使用原則"
     ],
     "answer": 2,
@@ -1630,7 +1630,7 @@
       "隨機誤差",
       "維度災難",
       "協變量偏移",
-      "概念漂移（Concept Drift）"
+      "概念漂移"
     ],
     "answer": 3,
     "explanation": "例如在疫情前後，相同的文字特徵可能對應著完全不同的消費意圖。概念漂移意味著舊模型的決策邏輯已徹底失效，必須重訓模型。",
@@ -1651,7 +1651,7 @@
       "Hardware, Hybrid, Host",
       "High, Heavy, Huge",
       "Hidden, Heuristic, Holistic",
-      "Helpful（有幫助）、Honest（誠實不欺）、Harmless（安全無害）"
+      "Helpful、Honest、Harmless"
     ],
     "answer": 3,
     "explanation": "HHH 原則是衡量模型對齊成熟度的最高哲學綱領：不僅要精確解決使用者問題，更必須誠實坦承知識盲區，且堅決拒絕協助任何危害社會之惡意行動。",
@@ -1672,7 +1672,7 @@
       "完全自主代理",
       "規則自動化",
       "無人駕駛模式",
-      "人類在環機制（Human-in-the-Loop, HITL）"
+      "人類在環機制"
     ],
     "answer": 3,
     "explanation": "HITL 劃定了科技賦能與法律責任的清晰邊界：AI 可以提供極致的情報輔助，但面對涉及人命、自由與財產之重大判斷，最終道德與法律責任永遠由人類承擔。",
